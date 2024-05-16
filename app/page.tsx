@@ -23,8 +23,8 @@ export default function Home() {
                 AI DETECTION
               </span>
             </h1>
-            <p className="text-white">
-            The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app and make your first $ online fast.
+            <p className="text-white py-8">
+            Seamlessly eliminate AI detection barriers
             </p>
           </div>
           <div className="p-2">
@@ -40,6 +40,8 @@ export default function Home() {
 
         </div>
       </section>
+
+      
     </main>
     </>
   );
