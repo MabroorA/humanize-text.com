@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Remove aid detection",
-  description: "Remove ai text detection with this software ",
+  title: "Humanize",
+  description: "Remove ai text detection with Humanize",
 };
 
 export default function RootLayout({
