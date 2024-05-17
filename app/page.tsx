@@ -1,19 +1,13 @@
 import { Button } from "@/components/ui/button";
 
-
-
+import ChatComponent from "@/components/chatComponent";
+import NavBar from "@/components/navBar";
 
 export default function Home() {
   return (
     <>
     <main className=" max-w-7xl max-h-lvh mx-auto p-3">
-      <nav className=" flex flex-row justify-between bg-origin-padding p-3 text-white">
-        <div className=" hover:text-white">Humanize</div>
-        <div className="flex">
-          <div className="hover:text-white px-3">Pricing</div>
-          <div className="hover:text-white px-3">Login</div>
-        </div>
-      </nav>
+      <NavBar/>
       <section className="flex flex-row justify-between py-32 ">
         <div className="flex flex-col justify-left min-h-16 w-3/5">
           <div className=" text-left mt-4 p-2">
@@ -41,6 +35,7 @@ export default function Home() {
         </div>
       </section>
 
+      <ChatComponent/>
       
     </main>
     </>
