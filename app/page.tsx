@@ -7,8 +7,7 @@ import Chat from "@/components/chat";
 export default function Home() {
   return (
     <>
-    <main className=" max-w-7xl max-h-lvh mx-auto p-3">
-      <NavBar/>
+
       <section className="flex flex-row justify-between py-32 ">
         <div className="flex flex-col justify-left min-h-16 w-3/5">
           <div className=" text-left mt-4 p-2">
@@ -38,7 +37,6 @@ export default function Home() {
 
       <ChatComponent/>
       <Chat/>
-    </main>
     </>
   );
 }
