@@ -2,6 +2,8 @@ import NextAuth from "next-auth"
 import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
 
+import { SupabaseAdapter } from "@auth/supabase-adapter"
+import { Adapter } from "next-auth/adapters"
 export const authOptions = {
   // Configure one or more authentication providers
   providers: [
@@ -13,8 +15,12 @@ export const authOptions = {
       clientId: process.env.GOOGLE_ID ?? "",
       clientSecret: process.env.GOOGLE_SECRET ?? "",
     }),
-
   ],
+
+  adapter: SupabaseAdapter({
+    url: process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
+    secret: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "",
+  }) as Adapter,
 }
 
 
