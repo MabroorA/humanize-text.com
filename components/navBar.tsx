@@ -42,13 +42,15 @@ function AuthButton(){
 export default function navBar() {
   return (
     <nav className=" flex flex-row justify-between bg-origin-padding p-3 text-white ">
-        <div className="  hover:text-purple-500">
+        <div className=" p-2 hover:text-purple-500 ">
           Humanize 
         </div>
         <div className="flex">
-          <div className="hover:text-purple-500 px-3">Pricing</div>
+          <div className="hover:text-purple-500 p-2">
+            Pricing
+          </div>
           <div className=" px-3">
-          <AuthButton/>
+            <AuthButton/>
           </div>
         </div>
       </nav>
