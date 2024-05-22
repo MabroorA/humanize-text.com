@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import { signIn,signOut,useSession } from "next-auth/react";
 import { Button } from "./ui/button";
 import { useState } from "react";
@@ -9,15 +9,15 @@ function AuthButton(){
     const { data : session } = useSession();
     const [showSignOut, setShowSignOut] = useState(false);
 
-    const handleButtonClick = () => {
-      setShowSignOut(!showSignOut);
-      if (showSignOut) signOut();
+    const handleUserNameClick = () => {
+      setShowSignOut(prevState => !prevState);
+
     };
 
     if (session) {
       return (
         <div className="relative">
-          <Button variant="outline" onClick={handleButtonClick}>
+          <Button variant="outline" onClick={handleUserNameClick}>
             {session.user?.name}
           </Button>
           {showSignOut && (
