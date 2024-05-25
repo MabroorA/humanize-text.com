@@ -1,8 +1,5 @@
 import { Button } from "@/components/ui/button";
 
-import ChatComponent from "@/components/chatComponent";
-import NavBar from "@/components/navBar";
-import Chat from "@/components/chat";
 
 export default function Home() {
   return (
