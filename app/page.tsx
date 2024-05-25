@@ -1,3 +1,4 @@
+import Positives from "@/components/positives";
 import { Button } from "@/components/ui/button";
 
 
@@ -6,7 +7,7 @@ export default function Home() {
     <>
 
       <section className="flex flex-row justify-between py-32 ">
-        <div className="flex flex-col justify-left min-h-16 w-3/5">
+        <div className="flex flex-col justify-left min-h-16 w-3/5 ">
           <div className=" text-left mt-4 p-2">
             <h1 className=" text-6xl leading-none  text-white font-sans font-extrabold py-4 min">
               Humanize text <br/>&<br/> remove<br/> 
@@ -19,18 +20,19 @@ export default function Home() {
             </p>
           </div>
           <div className="p-2">
-            <Button size="lg" className=" bg-green-500 text-black-700 rounded">Get Humanize</Button>
+            <Button size="lg" className=" bg-green-500 text-black-700 font-medium rounded ">Get Humanize</Button>
           </div>
+          <p className="text-white">$100 off for first 3360 customers</p>
         </div>
 
         <div className="flex flex-col justify-between min-h-16 w-2/5">
           <div className=" bg-violet-700 rounded border-2 border-white min-h-full text-center text-white font-black ">
-            
             video will go here
           </div>
 
         </div>
       </section>
+      <Positives/>
 
     </>
   );
