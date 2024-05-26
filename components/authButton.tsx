@@ -18,9 +18,9 @@ export default function AuthButton(){
     if (session) {
       return (
         <div className="relative">
-          <Button variant="default" size="icon" onClick={handleUserNameClick} >
+          <Button variant="default" size="icon" onClick={handleUserNameClick} className="rounded-full"  >
             <img
-            className=" border-1 border-green-500 rounded"
+            className="rounded-full"
             src={session.user?.image || "no image"}
             alt="user image"
             />           
