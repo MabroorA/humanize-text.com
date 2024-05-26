@@ -26,12 +26,13 @@ export default function Home() {
             
             <Button size="xlg" variant="default" className=" text-1xl text-black-700 font-medium  bg-purple-300 hover:bg-purple-500 ">
               <Image
-                className="bg-transparent"
+                className="bg-transparent m-1"
                 src={logoIcon}
                 width={24}
                 alt="logo"
                 priority
               />
+               
               Get Humanize
             </Button>
           </div>
