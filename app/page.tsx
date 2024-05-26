@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 
 import Image from 'next/image'
 import logoIcon from "../public/2nd-iteration-icon.png"
+import Pricing from "@/components/pricing";
 
 export default function Home() {
   return (
@@ -48,7 +49,7 @@ export default function Home() {
         </div>
       </section>
       <Positives/>
-
+      <Pricing/>
     </>
   );
 }
