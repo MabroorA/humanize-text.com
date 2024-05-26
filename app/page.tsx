@@ -1,6 +1,8 @@
 import Positives from "@/components/positives";
 import { Button } from "@/components/ui/button";
 
+import Image from 'next/image'
+import logoIcon from "../public/2nd-iteration-icon.png"
 
 export default function Home() {
   return (
@@ -22,7 +24,16 @@ export default function Home() {
           
           <div className="p-2 ">
             
-            <Button size="lg" className="  text-black-700 font-medium bg-green-500    ">Get Humanize</Button>
+            <Button size="xlg" variant="default" className=" text-1xl text-black-700 font-medium  bg-purple-300 hover:bg-purple-500 ">
+              <Image
+                className="bg-transparent"
+                src={logoIcon}
+                width={24}
+                alt="logo"
+                priority
+              />
+              Get Humanize
+            </Button>
           </div>
           
           <p className="text-white">$100 off for first 3360 customers</p>

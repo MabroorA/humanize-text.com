@@ -2,7 +2,7 @@
 
 import AuthButton from "./authButton";
 import Image from 'next/image'
-import logoIcon from "../public/clean-logo.png"
+import logo from "../public/2nd-logo.png"
 
 
 export default function navBar() {
@@ -10,7 +10,7 @@ export default function navBar() {
     <nav className=" text-1xl flex flex-row justify-between bg-origin-padding p-3 text-white ">
         <div className="">
           <Image
-          src={logoIcon}
+          src={logo}
           width={200}
 
           alt="logo"
