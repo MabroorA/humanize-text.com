@@ -49,7 +49,9 @@ export default function Home() {
         </div>
       </section>
       <Positives/>
-      <Pricing/>
+      <div className="bg-white">
+        <Pricing/>
+      </div>
     </>
   );
 }

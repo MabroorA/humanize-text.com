@@ -1,5 +1,3 @@
-import React from 'react'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card'
 
 export default function pricing() {
   return (
@@ -14,31 +12,34 @@ export default function pricing() {
         </h3>
 
         <div className='flex flex-row justify-around '>
-            <Card className='bg-green-500'>
-                <CardHeader>
-                    <CardTitle>Starter</CardTitle>
-                    <CardDescription>£19.99</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <p>20k words limit</p>
-                </CardContent>
-                <CardFooter>
-                    <p>Card Footer</p>
-                </CardFooter>
-            </Card>
+            <div className="border rounded flex flex-col justify-normal text-left  min-h-12 min-w-40 pl-20 pr-40 pt-10 pb-10 space-y-4 bg-green-500">
+                <h4 className=" bg-inherit">Starter</h4>
+                <h1 className=' bg-inherit text-5xl'>£19.99</h1>
+                <div className="bg-inherit text-black">
+                    <p className=' bg-inherit'>20k words limit</p>
+                    <p className=' bg-inherit'>20k words limit</p>
+                    <p className=' bg-inherit'>20k words limit</p>
+                    <p className=' bg-inherit'>20k words limit</p>
+                    <p className=' bg-inherit'>20k words limit</p>
+                </div>
+                
+                <p className=' bg-inherit'>Card Footer</p>
+                
+            </div>
 
-            <Card>
-                <CardHeader>
-                    <CardTitle>Pro </CardTitle>
-                    <CardDescription>£49.99</CardDescription>
-                </CardHeader>
-                <CardContent>
-                    <p>50k words limit</p>
-                </CardContent>
-                <CardFooter>
-                    <p>Card Footer</p>
-                </CardFooter>
-            </Card>
+            <div className="border rounded flex flex-col justify-start text-left min-h-32 min-w-40 pl-20 pr-40 pt-10 space-y-4 bg-purple-500" >
+                <h4 className=' bg-inherit'>Pro</h4>
+                <h1 className=' bg-inherit text-5xl'>£49.99</h1>
+                <div className="bg-inherit text-black">
+                    <p className=' bg-inherit'>50k words limit</p>
+                    <p className=' bg-inherit'>50k words limit</p>
+                    <p className=' bg-inherit'>50k words limit</p>
+                    <p className=' bg-inherit'>50k words limit</p>
+                    <p className=' bg-inherit'>50k words limit</p>
+                </div>
+                <p className=' bg-inherit'>Card Footer</p>
+                
+            </div>
         </div>
     </div>
     </>
