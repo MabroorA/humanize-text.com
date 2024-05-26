@@ -1,15 +1,23 @@
 'use client';
 
 import AuthButton from "./authButton";
+import Image from 'next/image'
+import logoIcon from "../public/clean-logo.png"
 
 
 export default function navBar() {
   return (
     <nav className=" text-1xl flex flex-row justify-between bg-origin-padding p-3 text-white ">
-        <div className=" p-2 hover:text-purple-500 ">
-          Humanize 
+        <div className="">
+          <Image
+          src={logoIcon}
+          width={200}
+
+          alt="Picture of the author"
+          priority
+          />
         </div>
-        <div className="flex">
+        <div className="flex ">
           <div className="hover:text-purple-500 p-2">
             Demo
           </div>
