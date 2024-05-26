@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </section>
       <Positives/>
-      <div className="bg-white">
+      <div className="bg-white" id="pricing">
         <Pricing/>
       </div>
     </>

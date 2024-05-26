@@ -3,6 +3,7 @@
 import AuthButton from "./authButton";
 import Image from 'next/image'
 import logo from "../public/2nd-logo.png"
+import Link from "next/link";
 
 
 export default function navBar() {
@@ -22,9 +23,9 @@ export default function navBar() {
             Demo
           </div>
 
-          <div className="hover:text-purple-500 p-2">
+          <Link className="hover:text-purple-500 p-2 " href='#pricing'  >
             Pricing
-          </div>
+          </Link>
           <div className=" px-1">
             
             <AuthButton/>
