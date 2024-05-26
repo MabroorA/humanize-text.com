@@ -19,9 +19,12 @@ export default function Home() {
             Seamlessly eliminate AI detection barriers
             </p>
           </div>
-          <div className="p-2">
-            <Button size="lg" className=" bg-green-500 text-black-700 font-medium rounded ">Get Humanize</Button>
+          
+          <div className="p-2 ">
+            
+            <Button size="lg" className="  text-black-700 font-medium bg-green-500    ">Get Humanize</Button>
           </div>
+          
           <p className="text-white">$100 off for first 3360 customers</p>
         </div>
 

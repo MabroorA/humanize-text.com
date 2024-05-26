@@ -13,7 +13,7 @@ export default function navBar() {
           src={logoIcon}
           width={200}
 
-          alt="Picture of the author"
+          alt="logo"
           priority
           />
         </div>
