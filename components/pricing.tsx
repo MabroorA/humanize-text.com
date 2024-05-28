@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 
 
-import { CheckFat,X } from "@phosphor-icons/react/dist/ssr";
+import { Check,CheckFat,X } from "@phosphor-icons/react/dist/ssr";
 
 
 export default function pricing() {
@@ -24,12 +24,12 @@ export default function pricing() {
                     <h1 className=' bg-inherit text-5xl font-black'>£19.99</h1>
                 </div>
                 
-                <div className=" text-white py-4">
-                    <p className="py-2 flex flex-row"><CheckFat size={28} color="#42BEA0" weight="bold" /> 5k words limit</p>
-                    <p className="py-2 flex flex-row"><CheckFat size={28} color="#42BEA0" weight="bold" />  1000 words per request</p>
-                    <p className="py-2 flex flex-row"><CheckFat size={28} color="#42BEA0" weight="bold" />  Standard and Fluency mode</p>
-                    <p className=' text-gray-500 py-2 flex flex-row'><X size={28} color="gray" weight="bold" />no Access to paraphrasing history</p>
-                    <p className='text-gray-500 py-2 flex flex-row'><X size={28} color="gray" weight="bold" />50+ Languages Supported</p>
+                <div className=" text-white py-4 ">
+                    <p className="py-3 flex flex-row"><Check size={28} color="white" weight="regular" /> 5k words limit</p>
+                    <p className="py-3 flex flex-row"><Check size={28} color="white" weight="regular" />  1000 words per request</p>
+                    <p className="py-3 flex flex-row"><Check size={28} color="white" weight="regular" />  Standard and Fluency mode</p>
+                    <p className=' text-gray-500 py-3 flex flex-row'><X size={28} color="gray" weight="regular" />no Access to paraphrasing history</p>
+                    <p className='text-gray-500 py-3 flex flex-row'><X size={28} color="gray" weight="regular" />50+ Languages Supported</p>
                 </div>
                 <Button className="text-2xl text-white font-medium bg-teal-500 min-w-64 ">Buy now</Button>
                 
@@ -44,11 +44,11 @@ export default function pricing() {
                 </div>
                 
                 <div className=" text-white py-4">
-                    <p className="py-2 flex flex-row"><CheckFat size={28} color="#42BEA0" weight="fill" />  <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-violet-500 font-black">Unlimited </span>-Word limit</p>
-                    <p className="py-2 flex flex-row"><CheckFat size={28} color="#42BEA0" weight="fill" />  1000 words per request</p>
-                    <p className="py-2 flex flex-row"><CheckFat size={28} color="#42BEA0" weight="fill" />  Access to all 5 writing modes</p>
-                    <p className="py-2 flex flex-row"><CheckFat size={28} color="#42BEA0" weight="fill" />  Access to paraphrasing history</p>
-                    <p className="py-2 flex flex-row"><CheckFat size={28} color="#42BEA0" weight="fill" />  50+ Languages Supported</p>
+                    <p className="py-3 flex flex-row"><Check size={28} color="#42BEA0" weight="regular" />  <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-violet-500 font-black">Unlimited </span>-Word limit</p>
+                    <p className="py-3 flex flex-row"><Check size={28} color="#42BEA0" weight="regular" />  1000 words per request</p>
+                    <p className="py-3 flex flex-row"><Check size={28} color="#42BEA0" weight="regular" />  Access to all 5 writing modes</p>
+                    <p className="py-3 flex flex-row"><Check size={28} color="#42BEA0" weight="regular" />  Access to paraphrasing history</p>
+                    <p className="py-3 flex flex-row"><Check size={28} color="#42BEA0" weight="regular" />  50+ Languages Supported</p>
                 </div>
                 <Button className="text-2xl text-white font-medium bg-clip bg-gradient-to-r from-teal-300 to-violet-600 min-w-64 hover:bg-purple-600 ">Buy now</Button>
                 
