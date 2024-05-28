@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 
 
-import { Check,CheckFat,X } from "@phosphor-icons/react/dist/ssr";
+import { Check,X } from "@phosphor-icons/react/dist/ssr";
 
 
 export default function pricing() {
@@ -17,7 +17,7 @@ export default function pricing() {
         </h3>
 
         <div className='flex flex-row justify-around pb-12'>
-            <div className="bg-[#212121] border rounded-lg flex flex-col justify-normal text-left p-5">
+            <div className="bg-[#212121] border rounded-lg flex flex-col justify-normal text-left p-5 transition-transform transform hover:scale-105">
                 <h4>Starter</h4>
                 <div className="flex flex-row">
                     <p className="text-gray-400 line-through mt-6">29.99</p>
@@ -48,7 +48,7 @@ export default function pricing() {
                 <Button className="text-2xl text-white font-medium bg-teal-500 min-w-64">Buy now</Button>
             </div>
 
-            <div className="bg-[#212121] border-2 border-teal-400 rounded-lg flex flex-col justify-normal text-left p-5">
+            <div className="bg-[#212121] border-2 border-teal-400 rounded-lg flex flex-col justify-normal text-left p-5 transition-transform transform hover:scale-105">
                 <h4>Pro</h4>
                 <div className="flex flex-row">
                     <p className="text-gray-400 line-through mt-6">59.99</p>
