@@ -18,12 +18,12 @@ export default function navBar() {
           priority
           />
         </div>
-        <div className="flex ">
-          <div className="hover:text-purple-500 p-2">
-            Demo
+        <div className="flex flex-row justify-around ">
+          <div className="hover:text-purple-500 p-2 ">
+            Features
           </div>
 
-          <Link className="hover:text-purple-500 p-2 " href='#pricing'  >
+          <Link className="hover:text-purple-500 p-2 px-8 " href='#pricing'  >
             Pricing
           </Link>
           <div className=" px-1">
