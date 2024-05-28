@@ -1,43 +1,55 @@
+import { Button } from "./ui/button";
+import { TiTick } from "react-icons/ti";
+import { ImCross } from "react-icons/im";
+
 
 export default function pricing() {
   return (
     <>
-    <div className='flex flex-col justify-center text-center text-white'>
-        <div className='text-5xl font-medium text-green-400 p-4'>
-            pricing
+    <div className='flex flex-col justify-center text-center text-white '>
+        <div className='text-4xl text-teal-400 p-6'>
+            Pricing
         </div>
-        <h1  className='p-4'>Save hours of repetitive code, ship fast, get profitable!</h1>
+        <h1  className='text-4xl font-bold '>Save hours of writing,<br/>bypass ai detection in an instant!</h1>
         <h3 className='py-8' >
-            <span className='text-green-500'>say save 100 </span>to be the first 3000 customers
+            <span className='text-teal-500 font-medium'>Save 50% </span>now with your first 5k words  
         </h3>
 
-        <div className='flex flex-row justify-around '>
-            <div className="border rounded flex flex-col justify-normal text-left  min-h-12 min-w-40 pl-20 pr-40 pt-10 pb-10 space-y-4 bg-green-500">
-                <h4 className=" bg-inherit">Starter</h4>
-                <h1 className=' bg-inherit text-5xl'>£19.99</h1>
-                <div className="bg-inherit text-black">
-                    <p className=' bg-inherit'>20k words limit</p>
-                    <p className=' bg-inherit'>20k words limit</p>
-                    <p className=' bg-inherit'>20k words limit</p>
-                    <p className=' bg-inherit'>20k words limit</p>
-                    <p className=' bg-inherit'>20k words limit</p>
+        <div className='flex flex-row justify-around pb-12  '>
+            <div className=" bg-[#212121] border rounded-lg flex flex-col justify-normal text-left  p-5 ">
+                <h4 >Starter</h4>
+                <div className="flex flex-row ">
+                    <p className=" text-gray-400 line-through mt-6 ">29.99</p>
+                    <h1 className=' bg-inherit text-5xl font-black'>£19.99</h1>
                 </div>
                 
-                <p className=' bg-inherit'>Card Footer</p>
+                <div className=" text-white py-4">
+                    <p className="py-2 flex flex-row"><TiTick  size={25} color="green" /> 5k words limit</p>
+                    <p className="py-2 flex flex-row"><TiTick  size={25} color="green" /> 1000 words per request</p>
+                    <p className="py-2 flex flex-row"><TiTick  size={25} color="green" /> Standard and Fluency mode</p>
+                    <p className=' text-gray-500 py-2 flex flex-row'><ImCross size={20} color="orange" />- no Access to paraphrasing history</p>
+                    <p className='text-gray-500 py-2 flex flex-row'><ImCross size={20} color="orange" />- 50+ Languages Supported</p>
+                </div>
+                <Button className="text-2xl text-white font-medium bg-teal-500 min-w-64 ">Buy now</Button>
+                
                 
             </div>
 
-            <div className="border rounded flex flex-col justify-start text-left min-h-32 min-w-40 pl-20 pr-40 pt-10 space-y-4 bg-purple-500" >
-                <h4 className=' bg-inherit'>Pro</h4>
-                <h1 className=' bg-inherit text-5xl'>£49.99</h1>
-                <div className="bg-inherit text-black">
-                    <p className=' bg-inherit'>50k words limit</p>
-                    <p className=' bg-inherit'>50k words limit</p>
-                    <p className=' bg-inherit'>50k words limit</p>
-                    <p className=' bg-inherit'>50k words limit</p>
-                    <p className=' bg-inherit'>50k words limit</p>
+            <div className=" bg-[#212121] border-2 border-teal-400 rounded-lg flex flex-col justify-normal text-left  p-5 " >
+                <h4 >Pro</h4>
+                <div className="flex flex-row ">
+                    <p className=" text-gray-400 line-through mt-6 ">59.99</p>
+                    <h1 className=' bg-inherit text-5xl font-black'>£49.99</h1>
                 </div>
-                <p className=' bg-inherit'>Card Footer</p>
+                
+                <div className=" text-white py-4">
+                    <p className="py-2 flex flex-row"><TiTick  size={25} color="green" /> <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-violet-500 font-black">Unlimited </span>-Word limit</p>
+                    <p className="py-2 flex flex-row"><TiTick  size={25} color="green" /> 1000 words per request</p>
+                    <p className="py-2 flex flex-row"><TiTick  size={25} color="green" /> Access to all 5 writing modes</p>
+                    <p className="py-2 flex flex-row"><TiTick  size={25} color="green" /> Access to paraphrasing history</p>
+                    <p className="py-2 flex flex-row"><TiTick  size={25} color="green" /> 50+ Languages Supported</p>
+                </div>
+                <Button className="text-2xl text-white font-medium bg-clip bg-gradient-to-r from-teal-300 to-violet-600 min-w-64 hover:bg-purple-600 ">Buy now</Button>
                 
             </div>
         </div>
