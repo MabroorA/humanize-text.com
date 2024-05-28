@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Humanize",
-  description: "Remove ai text detection with Humanize",
+  description: "bypass ai text detection with Humanize",
 };
 
 export default async function RootLayout({
