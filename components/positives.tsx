@@ -1,11 +1,10 @@
 import React from 'react'
 
-function positives() {
+export default function Comparison() {
   return (
-    <h1 className=' text-4xl font-medium flex flex-row justify-center text-green-400 ' >
-        positives
+    <h1 className=' text-4xl font-medium flex flex-row justify-center text-teal-400 m-8' >
+        Comparison
     </h1>
   )
 }
 
-export default positives

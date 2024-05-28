@@ -1,11 +1,12 @@
-import Positives from "@/components/positives";
-import Pricing from "@/components/pricing";
-
 import { Button } from "@/components/ui/button";
 
 import Image from 'next/image'
 import logoIcon from "../public/2nd-iteration-icon.png"
+import demoGif from "../public/demo-vid-ezgif.com-video-to-gif-converter.gif"
+
 import WhyHumanize from "@/components/whyHumanize";
+import Comparison from "@/components/positives";
+import Pricing from "@/components/pricing";
 
 
 
@@ -16,7 +17,7 @@ export default function Home() {
       <section className="flex flex-col justify-between py-8 ">
         <div className="flex flex-col justify-center min-h-16  ">
           <div className=" text-center ">
-            <h1 className=" text-6xl  text-white font-mono font-extrabold py-3 ">
+            <h1 className=" text-6xl  text-white  font-extrabold py-3 ">
                 Bypass 
                <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-violet-500">
                 {" "}AI DETECTION
@@ -25,10 +26,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col min-h-16 ">
-          <video className=" bg-teal-500 rounded-lg  min-h-full text-center m-4 mx-10">
-           <source src={"../video/demo-vid.mp4"} type="video/mp4"/> 
-          </video>
+        <div className="flex flex-col items-center   min-h-full min-w-full  text-center m-4 ">
+        
+          <Image
+          
+          src={demoGif}
+          alt="image not loaded"
+          />
         </div>
         <div className="flex flex-row justify-center  p-2 ">
             
@@ -49,7 +53,7 @@ export default function Home() {
       </section>
       <WhyHumanize/>
       <div id="features">
-        <Positives/>
+        <Comparison/>
       </div>
       <div className=" bg-black " id="pricing">
         <Pricing/>
