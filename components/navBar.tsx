@@ -19,9 +19,9 @@ export default function navBar() {
           />
         </div>
         <div className="flex flex-row justify-around ">
-          <div className="hover:text-purple-500 p-2 ">
+          <Link className="hover:text-purple-500 p-2 " href='#features'>
             Features
-          </div>
+          </Link>
 
           <Link className="hover:text-purple-500 p-2 px-8 " href='#pricing'  >
             Pricing

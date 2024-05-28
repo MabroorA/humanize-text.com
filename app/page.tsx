@@ -48,7 +48,9 @@ export default function Home() {
         
       </section>
       <WhyHumanize/>
-      <Positives/>
+      <div id="features">
+        <Positives/>
+      </div>
       <div className=" bg-black " id="pricing">
         <Pricing/>
       </div>
