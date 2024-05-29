@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 
 import Image from 'next/image'
@@ -8,9 +9,11 @@ import WhyHumanize from "@/components/whyHumanize";
 import Comparison from "@/components/positives";
 import Pricing from "@/components/pricing";
 
+import {TypeAnimation} from "react-type-animation"
 
 
 export default function Home() {
+
   return (
     <>
 
@@ -19,8 +22,29 @@ export default function Home() {
           <div className=" text-center ">
             <h1 className=" text-6xl  text-white  font-extrabold py-3 ">
                 Bypass 
-               <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-violet-500">
-                {" "}AI DETECTION
+               <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-violet-500 ">
+                {" "} 
+
+                <TypeAnimation
+                sequence={[
+                  
+                  'AI DETECTION', 
+                  3000, 
+                  'Turnit DETECTION', 
+                  3000, 
+                  'ChatGPT DETECTION',
+                  () => {
+                    console.log('Sequence completed');
+                  },
+                ]}
+                
+                repeat={Infinity}
+                speed={20}
+                deletionSpeed={20}
+                
+                />
+
+                
               </span>
             </h1>
           </div>
