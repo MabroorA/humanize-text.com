@@ -33,7 +33,7 @@ function page() {
             placeholder="Enter text to Humanize"
             onChange={handleInputChange}
           />
-          <Button type='submit' size="lg" variant="outline"  className='bg-teal-500 h-full m-0.5'>Humanize</Button>
+          <Button type='submit' size="lg" variant="outline"  className='bg-teal-500 h-full m-0.5 font-medium text-white bg-clip  bg-gradient-to-r from-teal-300 to-violet-500'>Humanize</Button>
         </div>
         
         </form>
