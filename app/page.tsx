@@ -50,26 +50,26 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center   min-h-full min-w-full  text-center m-4 ">
+        <div className="flex flex-col items-center   min-h-full min-w-full   ">
         
           <Image
+          className="w-5/6  rounded-2xl p-2"
           
           src={demoGif}
           alt="image not loaded"
           />
         </div>
         <div className="flex flex-row justify-center  p-2 ">
-            
-            <Button size="xlg" variant="default" className="  text-2xl text-black font-bold  bg-clip  bg-gradient-to-r from-teal-300 via-white to-violet-500">
-              
-              <Image
-                className="bg-transparent m-1"
+            <Image
+                className="bg-transparent mx-4"
                 src={logoIcon}
                 width={30}
 
                 alt="logo"
                 priority
               />
+            <Button size="xlg" variant="default" className="  text-2xl text-black   bg-clip  bg-gradient-to-r from-teal-300 to-violet-500">
+
               Get Humanize
             </Button>
           </div>
