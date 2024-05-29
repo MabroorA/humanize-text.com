@@ -64,7 +64,6 @@ export default function Home() {
                 className="bg-transparent mx-4"
                 src={logoIcon}
                 width={30}
-
                 alt="logo"
                 priority
               />

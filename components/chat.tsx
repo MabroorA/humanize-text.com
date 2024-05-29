@@ -13,7 +13,7 @@ export default function Chat() {
           {m.content}
         </div>
       ))}
-
+      
       <form onSubmit={handleSubmit}>
         <input
           value={input}
