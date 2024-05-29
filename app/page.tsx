@@ -39,7 +39,7 @@ export default function Home() {
                 ]}
                 
                 repeat={Infinity}
-                speed={20}
+                speed={10}
                 deletionSpeed={20}
                 
                 />
