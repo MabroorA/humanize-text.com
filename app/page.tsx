@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <>
 
-      <section className="flex flex-row justify-between pt-20 ">
+      <section className="flex flex-row justify-between py-20 ">
         <div className="flex flex-col justify-center ">
           <div className="text-left text-white ">
             <h1 className="text-5xl font-extrabold ">
-                Save hours of writing <br/>Bypass 
+                Bypass 
                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500 ">
                 {" "}
                 
@@ -40,7 +40,7 @@ export default function Home() {
                   },
                 ]}
                 repeat={Infinity}
-                speed={10}
+                speed={2}
                 deletionSpeed={20}
                 />
                 DETECTION
@@ -48,8 +48,8 @@ export default function Home() {
               </span>
 
             </h1>
-            <p className="py-3 pt-8 text-2xl">
-            Save hours of writing
+            <p className="py-3 pt-8 text-lg text-gray-400">
+            The anti ai tool that save hours of writing in a click.
             </p>
             
           </div>
@@ -60,7 +60,6 @@ export default function Home() {
           </div>
         </div>
         
-
         <div className="flex flex-col items-center ">
           <Image
           className="w-full p-2 rounded-2xl"
@@ -76,10 +75,6 @@ export default function Home() {
                 alt="logo"
                 priority
               />
-            <Button size="xlg" variant="default" className="text-2xl text-black bg-clip bg-gradient-to-r from-teal-300 to-violet-500">
-
-              Get Humanize
-            </Button>
           </div> */}
         
       </section>
