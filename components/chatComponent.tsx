@@ -5,7 +5,11 @@ import { useChat } from 'ai/react';
 import { Button } from '@/components/ui/button';
 
 export default function chatComponent(){
-    const { messages, input, handleInputChange, handleSubmit } = useChat();
+
+
+    const { messages, input, handleInputChange, handleSubmit, setMessages } = useChat({
+        
+    });
     return(
         <div>
             <div  className=' flex flex-row justify-center p-10 w-full'>
