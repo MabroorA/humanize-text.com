@@ -17,35 +17,33 @@ export default function Home() {
   return (
     <>
 
-      <section className="flex flex-row justify-between py-20 ">
-        <div className="flex flex-col justify-center ">
+      <section className="flex flex-row w-full py-20 ">
+        <div className="flex flex-col w-full ">
           <div className="text-left text-white ">
-            <h1 className="text-5xl font-extrabold ">
-                Bypass 
-               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500 ">
-                {" "}
-                
-                <TypeAnimation
-                
-                sequence={[
+            <h1 className="text-6xl font-extrabold leading-normal">
+                Bypass
+                <div className="rounded-lg ">
+                  <TypeAnimation
+                  className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500"
                   
-                  'AI', 
-                  3000, 
-                  'Turnit', 
-                  3000, 
-                  'GPT',
-                  5000,
-                  () => {
-                    console.log('Sequence completed');
-                  },
-                ]}
-                repeat={Infinity}
-                speed={2}
-                deletionSpeed={20}
-                />
+                  sequence={[
+                    
+                    'AI', 
+                    3000, 
+                    'Turnit', 
+                    3000, 
+                    'GPT',
+                    5000,
+                    () => {
+                      console.log('Sequence completed');
+                    },
+                  ]}
+                  repeat={Infinity}
+                  speed={2}
+                  deletionSpeed={20}
+                  />
+                </div> 
                 DETECTION
-                
-              </span>
 
             </h1>
             <p className="py-3 pt-8 text-lg text-gray-400">
@@ -60,7 +58,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="flex flex-col items-center ">
+        <div className="w-2/5">
           <Image
           className="w-full p-2 rounded-2xl"
           src={demoGif}
