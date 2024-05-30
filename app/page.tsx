@@ -18,7 +18,7 @@ export default function Home() {
     <>
 
       <section className="flex flex-row w-full py-20 ">
-        <div className="flex flex-col w-full ">
+        <div className="flex flex-col w-3/5 ">
           <div className="text-left text-white ">
             <h1 className="text-6xl font-extrabold leading-normal">
                 Bypass
@@ -44,6 +44,10 @@ export default function Home() {
                   />
                 </div> 
                 DETECTION
+                
+                
+                
+              
 
             </h1>
             <p className="py-3 pt-8 text-lg text-gray-400">
