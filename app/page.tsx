@@ -17,13 +17,34 @@ export default function Home() {
   return (
     <>
 
-      <section className="flex flex-row justify-around pt-20 ">
+      <section className="flex flex-row justify-between pt-20 ">
         <div className="flex flex-col justify-center ">
           <div className="text-left text-white ">
             <h1 className="text-5xl font-extrabold ">
-            Save hours of writing <br/>Bypass 
+                Save hours of writing <br/>Bypass 
                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500 ">
-                {" "} AI DETECTION
+                {" "}
+                
+                <TypeAnimation
+                
+                sequence={[
+                  
+                  'AI', 
+                  3000, 
+                  'Turnit', 
+                  3000, 
+                  'GPT',
+                  5000,
+                  () => {
+                    console.log('Sequence completed');
+                  },
+                ]}
+                repeat={Infinity}
+                speed={10}
+                deletionSpeed={20}
+                />
+                DETECTION
+                
               </span>
 
             </h1>
