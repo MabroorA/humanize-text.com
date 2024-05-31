@@ -18,7 +18,7 @@ export default function Home() {
     <>
 
       <section className="flex flex-row w-full py-20 ">
-        <div className="flex flex-col w-3/5 ">
+        <div className="flex flex-col justify-between w-2/5 ">
           <div className="text-left text-white ">
             <h1 className="text-6xl font-extrabold leading-normal">
                 Bypass
@@ -28,11 +28,13 @@ export default function Home() {
                   
                   sequence={[
                     
-                    'AI', 
+                    'ChatGPT', 
                     3000, 
                     'Turnit', 
                     3000, 
-                    'GPT',
+                    'GPTZero',
+                    5000,
+                    'Gemini',
                     5000,
                     () => {
                       console.log('Sequence completed');
@@ -43,7 +45,7 @@ export default function Home() {
                   deletionSpeed={20}
                   />
                 </div> 
-                DETECTION
+                AI DETECTION
                 
                 
                 
@@ -51,20 +53,20 @@ export default function Home() {
 
             </h1>
             <p className="py-3 pt-8 text-lg text-gray-400">
-            The anti ai tool that save hours of writing in a click.
+            The anti artificial intelligence tool that save hours of writing in a click.
             </p>
             
           </div>
-          <div className="pt-8 ">
-            <Button size="xlg" variant="default" className="text-2xl text-black bg-clip bg-gradient-to-r from-teal-300 to-violet-500 ">
+          <div className="">
+            <Button size="xlg" variant="default" className="text-2xl text-black rounded-lg bg-clip bg-gradient-to-r from-teal-400 to-violet-400 ">
                 Get Humanize
             </Button>
           </div>
         </div>
         
-        <div className="w-2/5">
+        <div className="w-3/5">
           <Image
-          className="w-full p-2 rounded-2xl"
+          className="w-full rounded-2xl "
           src={demoGif}
           alt="image not loaded"
           />
