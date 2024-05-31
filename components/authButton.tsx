@@ -18,6 +18,7 @@ export default function AuthButton(){
     if (session) {
       return (
         <div className="relative">
+          
           <Button variant="default" size="icon" onClick={handleUserNameClick} className="rounded-full"  >
             <img
             
@@ -29,10 +30,15 @@ export default function AuthButton(){
 
           {showSignOut && (
             <div className="absolute top-full mt-2">
+              {session.user?.name}<br/>
+              {session.user?.email}
+            <div className="absolute top-full mt-2">
               <Button variant="destructive" onClick={() => signOut()}>
                 Sign Out
               </Button>
             </div>
+            </div>
+
           )}
         </div>
       );
