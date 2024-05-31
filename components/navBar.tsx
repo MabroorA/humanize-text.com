@@ -4,6 +4,7 @@ import AuthButton from "./authButton";
 import Image from 'next/image'
 import logo from "../public/2nd-logo.png"
 import Link from "next/link";
+import SubscriptionButton from "./subscriptionButton";
 
 
 export default function navBar() {
@@ -26,8 +27,11 @@ export default function navBar() {
             Features
           </Link>
 
-          <Link className="p-2 px-8 hover:text-purple-500 " href='#pricing'  >
+          <Link className="p-2 hover:text-purple-500 " href='#pricing'  >
             Pricing
+          </Link>
+          <Link className="px-2 hover:text-purple-500" href='/pricing'>
+            <SubscriptionButton/>
           </Link>
           <div className="px-1 ">
             
