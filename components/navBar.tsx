@@ -5,6 +5,7 @@ import Image from 'next/image'
 import logo from "../public/2nd-logo.png"
 import Link from "next/link";
 import SubscriptionButton from "./subscriptionButton";
+import DashboardLink from "./dashboardLink";
 
 
 export default function navBar() {
@@ -21,7 +22,7 @@ export default function navBar() {
         </Link>
         <div className="flex flex-row justify-around ">
           <Link className="p-2 hover:text-purple-500 " href='/dashboard'>
-            Dashboard
+            <DashboardLink/>
           </Link>
           <Link className="p-2 hover:text-purple-500 " href='#features'>
             Features
