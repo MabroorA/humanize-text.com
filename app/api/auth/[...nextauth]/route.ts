@@ -4,7 +4,8 @@ import GoogleProvider from "next-auth/providers/google"
 
 import { SupabaseAdapter } from "@auth/supabase-adapter"
 import { Adapter } from "next-auth/adapters"
-export const authOptions = {
+
+const handler = NextAuth({
   // Configure one or more authentication providers
   providers: [
     GithubProvider({
@@ -20,10 +21,11 @@ export const authOptions = {
   adapter: SupabaseAdapter({
     url: process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
     secret: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "",
-  }) as Adapter,
-}
+  })as Adapter,
+  
+});
 
 
-export const handler = NextAuth(authOptions);
+
 
 export { handler as GET, handler as POST}
