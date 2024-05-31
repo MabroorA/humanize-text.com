@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='text-6xl text-center text-teal-500 '>Pricing page</div>
+    <div className='text-5xl text-center text-teal-500 '>Pricing page</div>
   )
 }
 
