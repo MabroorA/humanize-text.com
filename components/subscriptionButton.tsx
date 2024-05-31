@@ -2,7 +2,7 @@ import { useSession } from "next-auth/react";
 import { Button } from "./ui/button";
 
 
-export default function subscriptionButton() {
+export default function SubscriptionButton() {
     const { data : session } = useSession();
 
 

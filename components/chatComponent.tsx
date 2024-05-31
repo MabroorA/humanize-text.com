@@ -4,12 +4,12 @@ import { useChat } from 'ai/react';
 
 import { Button } from '@/components/ui/button';
 
-export default function chatComponent(){
+export default function ChatComponent(){
 
 
-    const { messages, input, handleInputChange, handleSubmit, setMessages } = useChat({
-        
-    });
+    const { messages, input, handleInputChange, handleSubmit } = useChat({
+        api: 'api/chat',
+      });
     return(
         <div>
             <div  className=' flex flex-row justify-center p-10 w-full'>

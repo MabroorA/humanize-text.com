@@ -20,6 +20,7 @@ export default function AuthButton(){
         <div className="relative">
           <Button variant="default" size="icon" onClick={handleUserNameClick} className="rounded-full"  >
             <img
+            
             className="rounded-full"
             src={session.user?.image || "no image"}
             alt="user image"

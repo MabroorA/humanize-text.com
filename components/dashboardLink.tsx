@@ -3,7 +3,7 @@ import React from 'react'
 
 import Link from 'next/link';
 
-function dashboardLink() {
+function DashboardLink() {
     const { data : session } = useSession();
 
 
@@ -24,4 +24,4 @@ function dashboardLink() {
   
 }
 
-export default dashboardLink
+export default DashboardLink
