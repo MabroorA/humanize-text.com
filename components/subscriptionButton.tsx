@@ -9,7 +9,7 @@ export default function subscriptionButton() {
     if (session) {
       return (
         <div className="relative">
-          <Button variant="default" size="default"  className="text-white bg-teal-400 rounded-full hover:bg-purple-500 "  >    
+          <Button variant="default" size="default"  className="text-base text-white bg-teal-500 rounded-full hover:bg-purple-500"  >    
                Upgrade to premium 
           </Button>
 
