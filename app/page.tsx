@@ -6,10 +6,10 @@ import logoIcon from "../public/2nd-iteration-icon.png"
 import demoGif from "../public/demo-vid-ezgif.com-video-to-gif-converter.gif"
 
 import WhyHumanize from "@/components/whyHumanize";
-import Comparison from "@/components/positives";
 import Pricing from "@/components/pricing";
 
 import {TypeAnimation} from "react-type-animation"
+import Features from "@/components/features";
 
 
 export default function Home() {
@@ -82,10 +82,10 @@ export default function Home() {
           </div> */}
         
       </section>
-      <WhyHumanize/>
-      <div id="features">
-        <Comparison/>
-      </div>
+      {/* <WhyHumanize/> */}
+      {/* <div id="features">
+        <Features/>
+      </div> */}
       <div className="bg-black " id="pricing">
         <Pricing/>
       </div>

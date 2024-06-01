@@ -24,9 +24,9 @@ export default function navBar() {
           <Link className="p-2 hover:text-purple-500 " href='/dashboard'>
             <DashboardLink/>
           </Link>
-          <Link className="p-2 hover:text-purple-500 " href='#features'>
+          {/* <Link className="p-2 hover:text-purple-500 " href='#features'>
             Features
-          </Link>
+          </Link> */}
 
           <Link className="p-2 hover:text-purple-500 " href='#pricing'  >
             Pricing
