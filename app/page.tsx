@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <>
 
-      <section className="flex lg:flex-row md:flex-col justify-center  lg:border-red-500 md:border-purple-500 sm:border-green-500 sm:border-2  lg:py-20 ">
+      <section className="flex lg:flex-row sm:flex-col justify-center  lg:py-20 ">
         <div className="flex flex-col justify-between lg:w-2/5   ">
-          <div className="lg:text-left text-white  md:text-center">
+          <div className="lg:text-left text-white  sm:text-center">
             
             
-            <h1 className="lg:text-6xl md:text-5xl font-extrabold leading-normal">
+            <h1 className="lg:text-6xl sm:text-5xl font-extrabold leading-normal">
 
                 Bypass
                 <div className="rounded-lg ">
@@ -67,36 +67,28 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="lg:w-3/5 md:flex md:flex-col md:p-2 md:max-w-screen-sm mx-auto  border">
+        <div className="lg:w-3/5 sm:flex sm:flex-col sm:p-2 sm:max-w-screen-sm mx-auto">
           <Image
           className="w-full rounded-2xl "
           src={demoGif}
           alt="image not loaded"
           />
-          <div className="lg:hidden md:flex md:flex-row md:justify-center p-3">
+          <div className="lg:hidden sm:flex sm:flex-row sm:justify-center p-3">
             <Button size="xlg" variant="default" className=" lg:text-xl sm:text-lg text-black rounded-lg bg-clip bg-gradient-to-r from-teal-400 to-violet-400 ">
                 Get Humanize
             </Button>
           </div>
         </div>
-        {/* <div className="flex flex-row justify-center p-2 ">
-            <Image
-                className="mx-4 bg-transparent"
-                src={logoIcon}
-                width={30}
-                alt="logo"
-                priority
-              />
-          </div> */}
+        
         
       </section>
       {/* <WhyHumanize/> */}
       {/* <div id="features">
         <Features/>
       </div> */}
-      <div className="bg-black " id="pricing">
+      {/* <div className="bg-black " id="pricing">
         <Pricing/>
-      </div>
+      </div> */}
     </>
   );
 }
