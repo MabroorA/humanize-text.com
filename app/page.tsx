@@ -17,10 +17,13 @@ export default function Home() {
   return (
     <>
 
-      <section className="flex flex-row w-full py-20 ">
-        <div className="flex flex-col justify-between w-2/5 ">
-          <div className="text-left text-white ">
-            <h1 className="text-6xl font-extrabold leading-normal">
+      <section className="flex lg:flex-row md:flex-col justify-center  lg:border-red-500 md:border-purple-500 sm:border-green-500 sm:border-2  lg:py-20 ">
+        <div className="flex flex-col justify-between lg:w-2/5   ">
+          <div className="lg:text-left text-white  md:text-center">
+            
+            
+            <h1 className="lg:text-6xl md:text-5xl font-extrabold leading-normal">
+
                 Bypass
                 <div className="rounded-lg ">
                   <TypeAnimation
@@ -52,24 +55,29 @@ export default function Home() {
               
 
             </h1>
-            <p className="py-3 pt-8 text-lg text-gray-400">
+            <p className="lg:py-3 lg:pt-8 lg:text-lg text-gray-400 sm:py-1 sm:pt-2 ">
             The anti artificial intelligence tool that save hours of writing in a click.
             </p>
             
           </div>
-          <div className="">
+          <div className=" hidden lg:block">
             <Button size="xlg" variant="default" className="text-2xl text-black rounded-lg bg-clip bg-gradient-to-r from-teal-400 to-violet-400 ">
                 Get Humanize
             </Button>
           </div>
         </div>
         
-        <div className="w-3/5">
+        <div className="lg:w-3/5 md:flex md:flex-col md:p-2 md:max-w-screen-sm mx-auto  border">
           <Image
           className="w-full rounded-2xl "
           src={demoGif}
           alt="image not loaded"
           />
+          <div className="lg:hidden md:flex md:flex-row md:justify-center p-3">
+            <Button size="xlg" variant="default" className=" lg:text-xl sm:text-lg text-black rounded-lg bg-clip bg-gradient-to-r from-teal-400 to-violet-400 ">
+                Get Humanize
+            </Button>
+          </div>
         </div>
         {/* <div className="flex flex-row justify-center p-2 ">
             <Image
