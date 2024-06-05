@@ -2,10 +2,15 @@ import { useSession } from 'next-auth/react';
 import React from 'react'
 
 import Link from 'next/link';
+import { Session } from 'next-auth';
 
-function DashboardLink() {
-    const { data : session } = useSession();
+type DashboardProperties = {
+  session: Session | null;
+}
 
+function DashboardLink({
+  session
+}: DashboardProperties) {
 
     if (session) {
       return (

@@ -1,13 +1,17 @@
 
 
-import { signIn,signOut,useSession } from "next-auth/react";
+import { signIn,signOut } from "next-auth/react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { Session } from "next-auth";
 
-
-export default function AuthButton(){
+type AuthButtonProperties = {
+  session: Session | null;
+}
+export default function AuthButton({
+  session
+}: AuthButtonProperties){
    
-    const { data : session } = useSession();
     const [showSignOut, setShowSignOut] = useState(false);
 
     const handleUserNameClick = () => {

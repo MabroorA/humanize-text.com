@@ -6,9 +6,14 @@ import logo from "../public/2nd-logo.png"
 import Link from "next/link";
 import SubscriptionButton from "./subscriptionButton";
 import DashboardLink from "./dashboardLink";
+import { Session } from "next-auth";
 
 
-export default function navBar() {
+export default function navBar({
+  session
+}: {
+  session: Session | null;
+}) {
   return (
     <nav className="flex flex-row justify-between p-3 text-white text-1xl bg-origin-padding">
         <Link href='/' >
@@ -22,7 +27,7 @@ export default function navBar() {
         </Link>
         <div className="flex flex-row justify-around ">
           <Link className="p-2 hover:text-purple-500 " href='/dashboard'>
-            <DashboardLink/>
+            <DashboardLink session={session}/>
           </Link>
           {/* <Link className="p-2 hover:text-purple-500 " href='#features'>
             Features
@@ -32,11 +37,11 @@ export default function navBar() {
             Pricing
           </Link>
           <Link className="px-2 hover:text-purple-500" href='/pricing'>
-            <SubscriptionButton/>
+            <SubscriptionButton session={session}/>
           </Link>
           <div className="px-1 ">
             
-            <AuthButton/>
+            <AuthButton session={session}/>
           </div>
         </div>
       </nav>

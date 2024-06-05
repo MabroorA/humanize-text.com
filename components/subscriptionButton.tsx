@@ -1,10 +1,15 @@
-import { useSession } from "next-auth/react";
+"use client";
+
 import { Button } from "./ui/button";
+import { Session } from "next-auth";
 
+type SubscriptionButtonProperties = {
+  session: Session | null;
+}
 
-export default function SubscriptionButton() {
-    const { data : session } = useSession();
-
+export default function SubscriptionButton({
+  session
+}: SubscriptionButtonProperties) {
 
     if (session) {
       return (
