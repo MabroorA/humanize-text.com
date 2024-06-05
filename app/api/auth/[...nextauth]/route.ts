@@ -22,6 +22,7 @@ const handler = NextAuth({
     url: process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
     secret: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "",
   })as Adapter,
+  secret: process.env.NEXTAUTH_SECRET!
   
 });
 
