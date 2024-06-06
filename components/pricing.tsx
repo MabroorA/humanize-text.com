@@ -11,7 +11,7 @@ export default function Pricing() {
         <div className='p-6 text-3xl text-teal-400'>
             Pricing
         </div>
-        <h1  className='text-2xl font-bold md:text-4xl '>Save hours of writing,<br/>bypass ai detection in an instant!</h1>
+        <h1  className='text-3xl font-bold md:text-4xl '>Save hours of writing,<br/>bypass ai detection in an instant!</h1>
         <h3 className='py-4 md:py-8' >
             <span className='font-medium text-teal-500'>Save 50% </span>now with your first 5k words  
         </h3>
@@ -53,7 +53,7 @@ export default function Pricing() {
                 <h4>Pro</h4>
                 <div className="flex flex-row">
                     <p className="mt-6 text-gray-400 line-through">59.99</p>
-                    <h1 className='text-4xl font-black md:text-5xl bg-inherit'>£49.99</h1>
+                    <h1 className='text-4xl font-black text-teal-300 md:text-5xl bg-inherit'>£49.99</h1>
                 </div>
                 <div className="py-4 text-white">
                     <p className="flex flex-row items-center py-3">
