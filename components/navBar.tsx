@@ -45,10 +45,10 @@ export default function navBar({
           {/* <Link className="p-2 hover:text-purple-500" href='#features'>
             Features
           </Link> */}
-          <Link className="p-2 hover:text-purple-500" href='#pricing'>
+          <Link className="p-2 hover:text-purple-500" href='/pricing'>
             Pricing
           </Link>
-          <Link className="hidden  md:visible md:px-2 md:hover:text-purple-500" href='/pricing'>
+          <Link className="hidden md:visible md:px-2 md:hover:text-purple-500" href='/pricing'>
             <SubscriptionButton session={session} />
           </Link>
           <div className="px-1">

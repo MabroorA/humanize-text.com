@@ -1,9 +1,13 @@
+import Pricing from '@/components/pricing'
 import React from 'react'
 
-function page() {
+function Page() {
   return (
-    <div className='text-5xl text-center text-teal-500 '>Pricing page</div>
+    <div className=''>
+      
+      <Pricing/>
+    </div>
   )
 }
 
-export default page
+export default Page
