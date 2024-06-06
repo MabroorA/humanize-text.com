@@ -36,7 +36,7 @@ export default function navBar({
       </Link>
       <div className="flex flex-col items-center md:flex-row">
         <div className="md:hidden">
-          <RiMenu5Fill size={35} className="cursor-pointer" onClick={toggleMenu} />
+          <RiMenu5Fill size={35} className="text-teal-400 cursor-pointer " onClick={toggleMenu} />
         </div>
         <div className={`flex flex-col md:flex-row md:items-center absolute md:static top-full right-0 bg-origin-padding md:bg-transparent z-50 md:z-auto ${isMenuOpen ? 'block' : 'hidden'} md:flex`}>
           <Link className="p-2 hover:text-purple-500" href='/dashboard'>
