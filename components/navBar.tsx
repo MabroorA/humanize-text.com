@@ -14,7 +14,7 @@ import { useState } from "react";
 
 
 
-export default function navBar({
+export default function NavBar({
   session
 }: {
   session: Session | null;
