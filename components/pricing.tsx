@@ -8,11 +8,11 @@ export default function Pricing() {
   return (
     <>
     <div className='flex flex-col justify-center text-center text-white '>
-        <div className='p-6 text-4xl text-teal-400'>
+        <div className='p-6 text-3xl text-teal-400'>
             Pricing
         </div>
-        <h1  className='text-4xl font-bold '>Save hours of writing,<br/>bypass ai detection in an instant!</h1>
-        <h3 className='py-8' >
+        <h1  className='text-2xl font-bold md:text-4xl '>Save hours of writing,<br/>bypass ai detection in an instant!</h1>
+        <h3 className='py-4 md:py-8' >
             <span className='font-medium text-teal-500'>Save 50% </span>now with your first 5k words  
         </h3>
         {/* PRICING CARDS */}
@@ -21,7 +21,7 @@ export default function Pricing() {
                 <h4>Starter</h4>
                 <div className="flex flex-row">
                     <p className="mt-6 text-gray-400 line-through">29.99</p>
-                    <h1 className='text-5xl font-black bg-inherit'>£19.99</h1>
+                    <h1 className='text-4xl font-black md:text-5xl bg-inherit'>£19.99</h1>
                 </div>
                 <div className="py-4 text-white">
                     <p className="flex flex-row items-center py-3">
@@ -45,15 +45,15 @@ export default function Pricing() {
                         <span className="ml-3">50+ Languages Supported</span>
                     </p>
                 </div>
-                <Button className="text-2xl font-medium text-white bg-teal-500 min-w-64">Buy now</Button>
+                <Button className="w-full px-4 text-2xl font-medium text-white bg-teal-500 md:min-w-64">Buy now</Button>
             </div>
             
             {/* CARD */}
-            <div className="bg-[#212121] border-2 border-teal-400 rounded-lg flex flex-col w-4/5 md:w-1/3  mx-auto md:flex-col md:justify-normal text-left p-5 md:transition-transform md:transform md:hover:scale-105">
+            <div className="bg-[#212121] border-2 border-teal-400 rounded-lg flex flex-col w-4/5 md:w-1/3 mx-auto md:justify-normal text-left p-5 md:transition-transform md:transform md:hover:scale-105">
                 <h4>Pro</h4>
                 <div className="flex flex-row">
                     <p className="mt-6 text-gray-400 line-through">59.99</p>
-                    <h1 className='text-5xl font-black bg-inherit'>£49.99</h1>
+                    <h1 className='text-4xl font-black md:text-5xl bg-inherit'>£49.99</h1>
                 </div>
                 <div className="py-4 text-white">
                     <p className="flex flex-row items-center py-3">
@@ -78,8 +78,10 @@ export default function Pricing() {
                         <span className="ml-3">50+ Languages Supported</span>
                     </p>
                 </div>
-                <Button className="text-2xl font-medium text-white bg-clip bg-gradient-to-r from-teal-300 to-violet-600 min-w-64 hover:bg-purple-600">Buy now</Button>
+                
+                <Button className="w-full px-4 text-2xl font-medium text-white bg-gradient-to-r from-teal-300 to-violet-600 hover:from-purple-600 hover:to-purple-700 md:min-w-64">Buy now</Button>
             </div>
+
         </div>
 
     </div>
