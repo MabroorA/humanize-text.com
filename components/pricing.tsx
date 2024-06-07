@@ -1,10 +1,28 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 
 import { Check,X } from "@phosphor-icons/react/dist/ssr";
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
 
 
-export default function Pricing() {
+export const plans = [
+    {
+        link:
+            process.env.NODE_ENV === 'development'
+                ? 'https://buy.stripe.com/test_aEU16r83u6fKcbCbII'
+                : '',
+        priceId:
+            process.env.NODE_ENV === 'development'
+            ? 'price_1POpsyRqLyEgrrLVhWeonU9Z'
+            : '',
+    }
+];
+
+export default async function Pricing() {
+    const session = await auth();
+    const user_email = session?.user?.email
   return (
     <>
     <div className='flex flex-col justify-center text-center text-white '>
@@ -20,8 +38,8 @@ export default function Pricing() {
             <div className="bg-[#212121] border rounded-lg flex flex-col w-4/5 md:w-1/3 mx-auto md:justify-normal text-left p-5 md:transition-transform md:transform md:hover:scale-105">
                 <h4>Starter</h4>
                 <div className="flex flex-row">
-                    <p className="mt-6 text-gray-400 line-through">29.99</p>
-                    <h1 className='text-4xl font-black md:text-5xl bg-inherit'>£19.99</h1>
+                    <p className="mt-6 text-gray-400 line-through">£39.99</p>
+                    <h1 className='text-4xl font-black md:text-5xl bg-inherit'>£29.99</h1>
                 </div>
                 <div className="py-4 text-white">
                     <p className="flex flex-row items-center py-3">
@@ -45,7 +63,9 @@ export default function Pricing() {
                         <span className="ml-3">50+ Languages Supported</span>
                     </p>
                 </div>
-                <Button className="w-full px-4 text-2xl font-medium text-white bg-teal-500 md:min-w-64">Buy now</Button>
+                <Link href={`${plans[0].link}?prefilled_email=${user_email}`}>
+                    <Button className="w-full px-4 text-2xl font-medium text-white bg-teal-500 md:min-w-64">Buy now</Button>
+                </Link>
             </div>
             
             {/* CARD */}
