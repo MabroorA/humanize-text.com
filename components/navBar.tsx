@@ -14,6 +14,7 @@ import { useState } from "react";
 
 
 
+
 export default function NavBar({
   session
 }: {
@@ -39,12 +40,15 @@ export default function NavBar({
           <RiMenu5Fill size={35} className="text-teal-400 cursor-pointer " onClick={toggleMenu} />
         </div>
         <div className={`flex flex-col md:flex-row md:items-center absolute md:static top-full right-0 bg-origin-padding md:bg-transparent z-50 md:z-auto ${isMenuOpen ? 'block' : 'hidden'} md:flex`}>
-          <Link className="p-2 hover:text-purple-500" href='/dashboard'>
+          <div className="p-2 hover:text-purple-500">
+            {/* <CreditsComponent/> */}
+          </div>
+          <div className="p-2 hover:text-purple-500" >
             <DashboardLink session={session} />
-          </Link>
-          {/* <Link className="p-2 hover:text-purple-500" href='#features'>
+          </div>
+          <Link className="p-2 hover:text-purple-500" href='#features'>
             Features
-          </Link> */}
+          </Link>
           <Link className="p-2 hover:text-purple-500" href='/pricing'>
             Pricing
           </Link>

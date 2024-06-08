@@ -12,6 +12,9 @@ import {TypeAnimation} from "react-type-animation"
 import Features from "@/components/features";
 
 
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
+
 export default function Home() {
 
   return (
@@ -77,6 +80,7 @@ export default function Home() {
         
         
       </section>
+
       {/* <WhyHumanize/> */}
       {/* <div id="features">
         <Features/>
