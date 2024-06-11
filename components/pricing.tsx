@@ -10,11 +10,11 @@ import { redirect } from "next/navigation";
 export const plans = [
     {
         link:
-            process.env.NODE_ENV === 'development'
+            process.env.NODE_ENV === 'production'
                 ? 'https://buy.stripe.com/test_aEU16r83u6fKcbCbII'
                 : '',
         priceId:
-            process.env.NODE_ENV === 'development'
+            process.env.NODE_ENV === 'production'
             ? 'price_1POpsyRqLyEgrrLVhWeonU9Z'
             : '',
     }
