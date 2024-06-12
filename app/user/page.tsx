@@ -1,7 +1,8 @@
-import { Button } from "@/components/ui/button";
+
+import ButtonSignOut from "@/components/buttonSignOut";
+
 import { auth } from "@/lib/auth";
 import prisma from "@/lib/db";
-import { User } from "@prisma/client";
 import { redirect } from "next/navigation";
 
 
@@ -16,9 +17,15 @@ export default async function Page () {
     const user = session?.user; 
     const userName = session?.user?.name;
     const userEmail = session?.user?.email;
+    
+
+    if (!user) {
+        redirect("/api/auth/signin?")
+      }
     const getUserCredits = await prisma.user.findUnique({
         where: {
-            id: user?.id
+            id: user?.id!,
+            email: user?.email! 
         },
         select: {
             credits: true
@@ -28,11 +35,6 @@ export default async function Page () {
 
     console.log(getUserCredits)
 
-    if (!user) {
-        redirect("/api/auth/signin?")
-      }
-
-
     return (
         <div className="flex flex-col p-3 space-y-2 text-white ">
             <div className="flex flex-row justify-between p-3 border-b-2 border-teal-600">
@@ -40,7 +42,7 @@ export default async function Page () {
                 {userName}
                 </div>
                 <div className="">
-                    <Button size="sm" variant="destructive">Sign out</Button>
+                    <ButtonSignOut/>
                 </div>
 
             </div>
