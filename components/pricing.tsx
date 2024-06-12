@@ -4,20 +4,31 @@ import { Button } from "./ui/button";
 
 import { Check,X } from "@phosphor-icons/react/dist/ssr";
 import { auth } from "@/lib/auth";
-import { redirect } from "next/navigation";
+
 
 
 export const plans = [
     {
         link:
-            process.env.NODE_ENV === 'production'
+            process.env.NODE_ENV === 'development'
                 ? 'https://buy.stripe.com/test_aEU16r83u6fKcbCbII'
                 : '',
         priceId:
-            process.env.NODE_ENV === 'production'
+            process.env.NODE_ENV === 'development'
             ? 'price_1POpsyRqLyEgrrLVhWeonU9Z'
             : '',
     }
+    // second plan
+    // {
+    //     link:
+    //         process.env.NODE_ENV === 'production'
+    //             ? 'https://buy.stripe.com/test_aEU16r83u6fKcbCbII'
+    //             : '',
+    //     priceId:
+    //         process.env.NODE_ENV === 'production'
+    //         ? 'price_1POpsyRqLyEgrrLVhWeonU9Z'
+    //         : '',
+    // }
 ];
 
 export default async function Pricing() {
