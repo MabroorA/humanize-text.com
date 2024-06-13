@@ -36,8 +36,8 @@ export default async function Page () {
     console.log(getUserCredits)
 
     return (
-        <div className="flex flex-col p-3 space-y-2 text-white ">
-            <div className="flex flex-row justify-between p-3 border-b-2 border-teal-600">
+        <div className="flex flex-col px-3 space-y-1 text-black md:space-x-1 ">
+            <div className="flex flex-row justify-between py-1 border-b-2 border-teal-600">
                 <div className="">
                 {userName}
                 </div>
@@ -46,10 +46,10 @@ export default async function Page () {
                 </div>
 
             </div>
-            <div className="p-3">
+            <div className="">
                 {userEmail}
             </div>
-            <div className="flex flex-row justify-between p-3">
+            <div className="flex flex-row justify-between py-1 ">
                 <div>Credits</div>
                 <div className="text-lg ">{credits}</div>
             </div>
