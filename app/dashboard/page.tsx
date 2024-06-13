@@ -18,7 +18,7 @@ export default async function page() {
 
   return (
     <>
-      <h1 className='text-3xl font-bold text-center text-transparent  bg-clip-text bg-gradient-to-r from-green-600 to-purple-400'>Dashboard</h1>
+      <h1 className='text-4xl font-bold text-center text-teal-800'>Dashboard</h1>
       <ChatComponent/>
     </>
   )

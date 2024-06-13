@@ -16,7 +16,7 @@ export default function ChatComponent(){
             <div  className='flex flex-col py-4 space-y-4 md:space-x-5 md:space-y-0 md:justify-center md:w-full md:p-10 md:flex-row'>
 
 
-                <form className='flex flex-col mx-auto w-4/5  md:flex-col md:justify-end md:w-1/2 md:h-96 bg-gray-400/55 backdrop-blur-lg  rounded-lg  md:m-0.5' onSubmit={handleSubmit}>
+                <form className='flex flex-col mx-auto w-4/5  md:flex-col md:justify-end md:w-1/2 md:h-96 bg-teal-600/35 backdrop-blur-lg  rounded-lg  md:m-0.5' onSubmit={handleSubmit}>
                     <div className='flex-grow overflow-y-auto p-3 m-0.5'>
                     {messages
                         .filter(m => m.role === 'user') // Only display messages from the user
@@ -39,7 +39,7 @@ export default function ChatComponent(){
 
                 </form>
                 
-                <div className='flex flex-col w-4/5 mx-auto md:w-1/2   md:h-96  bg-gray-400/55 backdrop-blur-lg  rounded-lg md:p-3 md:m-0.5 md:overflow-y-auto'>
+                <div className='flex flex-col w-4/5 mx-auto md:w-1/2   md:h-96  bg-teal-600/35 backdrop-blur-lg  rounded-lg md:p-3 md:m-0.5 md:overflow-y-auto'>
                     {messages
                         .filter(m => m.role === 'assistant') // Only display messages from the assistant
                         .map(m => (
