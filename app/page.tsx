@@ -63,9 +63,9 @@ export default function Home() {
       {/* <div id="features">
         <Features/>
       </div> */}
-      <div className="" id="pricing">
+      {/* <div className="" id="pricing">
         <Pricing />
-      </div>
+      </div> */}
     </>
   );
 }
