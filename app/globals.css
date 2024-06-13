@@ -4,13 +4,13 @@
 
 
 :root{
-  background-color: #212121;
+  background-color: #e7e5df;
 }
 
 
 @layer base {
   :root {
-    --background: #212121;
+    --background: #e7e5df;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;

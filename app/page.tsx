@@ -1,4 +1,4 @@
-"use client";
+
 import { Button } from "@/components/ui/button";
 
 import Image from 'next/image'
@@ -8,11 +8,11 @@ import demoGif from "../public/demo-vid-ezgif.com-video-to-gif-converter.gif"
 import WhyHumanize from "@/components/whyHumanize";
 import Pricing from "@/components/pricing";
 
-import {TypeAnimation} from "react-type-animation"
 import Features from "@/components/features";
 
 
 import { PrismaClient } from '@prisma/client'
+import TextAnimation from "@/components/textAnimation";
 const prisma = new PrismaClient()
 
 export default function Home() {
@@ -20,40 +20,18 @@ export default function Home() {
   return (
     <>
 
-      <section className="flex flex-col justify-center md:flex-row sm:flex-col lg:py-20 ">
-        <div className="flex flex-col md:flex-col lg:w-2/5 ">
-          <div className="text-center text-white text-middle md:text-left ">
+      <section className="flex flex-col justify-center md:flex-row lg:justify-between sm:flex-col lg:py-20 ">
+        <div className="flex flex-col justify-between md:flex-col lg:w-2/5 ">
+          <div className="text-center text-black text-middle md:text-left ">
             
             
             <h1 className="text-4xl font-extrabold leading-tight md:text-6xl md:leading-normal">
 
                 Bypass
-                <div className="rounded-lg ">
-                  <TypeAnimation
-                  className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-violet-500"
-                  
-                  sequence={[
-                    
-                    'ChatGPT', 
-                    3000, 
-                    'Turnit', 
-                    3000, 
-                    'GPTZero',
-                    5000,
-                    'Gemini',
-                    5000,
-                    () => {
-                      console.log('Sequence completed');
-                    },
-                  ]}
-                  repeat={Infinity}
-                  speed={2}
-                  deletionSpeed={20}
-                  />
-                </div> 
+                <TextAnimation/>
                 AI DETECTION
             </h1>
-            <p className="py-3 text-gray-400 lg:py-3 lg:pt-8 lg:text-lg sm:py-1 sm:pt-2 ">
+            <p className="py-3 text-gray-500 lg:py-3 lg:pt-8 lg:text-lg sm:py-1 sm:pt-2 ">
             Save hours of writing in a click.
             </p>
             
@@ -65,7 +43,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="mx-auto lg:w-3/5 sm:flex sm:flex-col sm:p-2 sm:max-w-screen-sm">
+        <div className=" lg:w-3/5 md:flex md:flex-col md:p-0 md:max-w-screen-sm">
           <Image
           className="w-full rounded-2xl "
           src={demoGif}
@@ -85,9 +63,9 @@ export default function Home() {
       {/* <div id="features">
         <Features/>
       </div> */}
-      {/* <div className="bg-black " id="pricing">
-        <Pricing/>
-      </div> */}
+      <div className="" id="pricing">
+        <Pricing />
+      </div>
     </>
   );
 }
