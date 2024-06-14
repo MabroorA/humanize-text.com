@@ -12,7 +12,7 @@ const TrashIcon = ({ onClick }: TrashIconProps ) => {
 
   return (
     <div
-      className="p-2 transition-transform duration-300 hover:scale-110"
+      className="p-1 transition-transform duration-300 hover:scale-110"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}

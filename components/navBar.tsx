@@ -27,7 +27,7 @@ export default function NavBar({
   };
 
   return (
-    <nav className="relative flex flex-row justify-between p-3 text-lg text-black bg-origin-padding">
+    <nav className="relative flex flex-row justify-between py-5 mx-auto text-lg text-black max-w-7xl ">
       <Link href='/' className="w-32 md:w-48">
         <Image
           src={logo}
@@ -39,15 +39,12 @@ export default function NavBar({
         <div className="md:hidden">
           <RiMenu5Fill size={35} className="text-teal-700 cursor-pointer " onClick={toggleMenu} />
         </div>
-        <div className={`flex flex-col md:flex-row md:items-center absolute md:static top-full right-0 bg-origin-padding md:bg-transparent z-50 md:z-auto ${isMenuOpen ? 'block' : 'hidden'} md:flex`}>
-          <div className="p-2 hover:text-purple-500" >
+        <div className={`flex flex-col md:space-x-10 md:flex-row md:items-center absolute md:static top-full right-0  md:bg-transparent z-50 md:z-auto ${isMenuOpen ? 'block' : 'hidden'} md:flex`}>
+          <div className=" hover:text-teal-700" >
             <DashboardLink session={session} />
           </div>
-          <Link className="p-2 hover:text-purple-500" href='/pricing'>
+          <Link className=" hover:text-teal-700" href='/pricing'>
             Pricing
-          </Link>
-          <Link className="hidden md:block md:px-2 md:hover:text-purple-500" href='/pricing'>
-            <SubscriptionButton session={session} />
           </Link>
           <div className="px-1">
             <AuthButton session={session} />

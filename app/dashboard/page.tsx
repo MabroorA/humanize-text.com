@@ -23,7 +23,7 @@ export default async function Page() {
 
   return (
     <>
-      <h1 className='text-4xl font-bold text-center text-teal-800'>
+      <h1 className='p-6 text-5xl font-black text-center text-teal-800'>
         Dashboard
       </h1>
       <CreditsComponent/>

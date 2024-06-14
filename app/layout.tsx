@@ -24,8 +24,8 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-          <main className="max-w-7xl max-h-lvh mx-auto p-3">
-            <NavBar session={session}/>
+          <NavBar session={session}/>
+          <main className="mx-auto  max-w-7xl max-h-lvh">
             {children}
           </main>
         </body>

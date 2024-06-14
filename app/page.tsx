@@ -2,18 +2,12 @@
 import { Button } from "@/components/ui/button";
 
 import Image from 'next/image'
-import logoIcon from "../public/2nd-iteration-icon.png"
 import demoGif from "../public/demo-vid-ezgif.com-video-to-gif-converter.gif"
 
-import WhyHumanize from "@/components/whyHumanize";
 import Pricing from "@/components/pricing";
 
-import Features from "@/components/features";
 
-
-import { PrismaClient } from '@prisma/client'
 import TextAnimation from "@/components/textAnimation";
-const prisma = new PrismaClient()
 
 export default function Home() {
 
@@ -59,10 +53,6 @@ export default function Home() {
         
       </section>
 
-      {/* <WhyHumanize/> */}
-      {/* <div id="features">
-        <Features/>
-      </div> */}
       <div className="" id="pricing">
         <Pricing />
       </div>
