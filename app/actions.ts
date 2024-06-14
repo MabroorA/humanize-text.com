@@ -1,6 +1,7 @@
 "use server";
 import { auth } from "@/lib/auth"
 import prisma from "@/lib/db";
+import { revalidatePath } from "next/cache";
 
 
 // fetch user credits
@@ -44,6 +45,8 @@ export async function reduceUserCredits(): Promise<number | null> {
                 },
             },
         });
+        console.log("FUNCTION")
+        revalidatePath("/dashboard")
 
         return updatedUserCredits.credits;
     } catch (error) {
