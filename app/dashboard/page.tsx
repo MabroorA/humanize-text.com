@@ -2,24 +2,33 @@
 import ChatComponent from "@/components/chatComponent";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
+import { getUserCredits, reduceUserCredits } from "../actions";
+import CreditsComponent from "@/components/creditsComponent";
 
 
 
 
-export default async function page() {
+export default async function Page() {
 
   const session = await auth();
   const user = session?.user;
 
   if (!user) {
-    redirect("/api/auth/signin?callbackUrl=/dashboard")
-  }
+    redirect("/api/auth/signin?callbackUrl=/dashboard");
 
+  }
+  const credits = await getUserCredits();
+
+  
 
   return (
     <>
-      <h1 className='text-3xl font-bold text-center text-transparent  bg-clip-text bg-gradient-to-r from-green-600 to-purple-400'>Dashboard</h1>
-      <ChatComponent/>
+      <h1 className='p-6 text-5xl font-black text-center text-teal-800'>
+        Dashboard
+      </h1>
+      <CreditsComponent/>
+
+      <ChatComponent credits={credits}  />
     </>
   )
 }
