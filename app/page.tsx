@@ -53,9 +53,9 @@ export default function Home() {
         
       </section>
 
-      <div className="" id="pricing">
+      {/* <div className="" id="pricing">
         <Pricing />
-      </div> 
+      </div>  */}
     </>
   );
 }
