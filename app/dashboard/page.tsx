@@ -4,6 +4,7 @@ import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { getUserCredits, reduceUserCredits } from "../actions";
 import CreditsComponent from "@/components/creditsComponent";
+import GridPattern from "@/components/magicui/animated-grid-pattern";
 
 
 
@@ -29,6 +30,7 @@ export default async function Page() {
       <CreditsComponent/>
 
       <ChatComponent credits={credits}  />
+
     </>
   )
 }

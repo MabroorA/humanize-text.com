@@ -9,11 +9,12 @@ import Pricing from "@/components/pricing";
 
 import TextAnimation from "@/components/textAnimation";
 
+
 export default function Home() {
 
   return (
     <>
-
+      
       <section className="flex flex-col justify-center md:flex-row lg:justify-between sm:flex-col lg:py-20 ">
         <div className="flex flex-col justify-between md:flex-col lg:w-2/5 ">
           <div className="text-center text-black text-middle md:text-left ">
@@ -49,10 +50,10 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        
-        
-      </section>
 
+      </section>
+      
+      
       {/* <div className="" id="pricing">
         <Pricing />
       </div>  */}
